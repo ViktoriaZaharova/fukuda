@@ -1802,7 +1802,13 @@ footer {
         -ms-flex-order: 1;
             order: 1;
     width: 66.67%;
-    padding: 32px 50px 50px; } }
+    padding: 32px 50px 50px; }
+  .category-slider .slide {
+    display: none; }
+    .category-slider .slide:first-child {
+      display: block; }
+  .category-slider.slick-initialized .slide {
+    display: block; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
