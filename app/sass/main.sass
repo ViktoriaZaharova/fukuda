@@ -153,8 +153,10 @@ label
     radius: 5px
   color: #fff
   padding: 6px 25px
+
   .icon
     margin: 0 0 0 15px
+
   &:hover
     background: #ffff
     color: $accent
@@ -259,6 +261,9 @@ h2
     .svg-icon
       fill: $orange
 
+.mb-20
+  margin-bottom: 20px
+
 //header
 .header-top
   padding: 20px 0 23px
@@ -280,6 +285,25 @@ h2
     height: 15px
     fill: #c4c4c4
     margin: 0 15px 0 0
+
+.header-mobile-top
+  display: none
+  padding: 18px 0 13px
+  border-bottom: 1px solid #e5e9fb
+
+  .header-links, .basket-links
+    fill: #000000
+    width: 30px
+    height: 26px
+
+  .header-links__val
+    height: 16px
+    min-width: 16px
+    font-size: 11.5px
+
+  .header-links, .basket-wrap
+    margin: 0 auto
+
 
 .menu
   margin: 0 auto
@@ -368,13 +392,36 @@ h2
       &:nth-child(2)
         width: 18px
 
+.btn-burger
+  cursor: pointer
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-direction: column
+
+  span
+    display: block
+    width: 38px
+    height: 5px
+    border-radius: 2.5px
+    background: $accent
+    margin: 0 0 7px
+
+    &:last-child
+      margin: 0
+
+    &:nth-child(2)
+      width: 27px
+
 .form-search
   position: relative
   max-width: 686px
   width: 100%
   margin: 0 auto
+
   input
     border-radius: 5px
+
   button
     position: absolute
     top: 50%
@@ -503,18 +550,26 @@ h2
     width: 100%
 
 //category
+.category-slider
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+
 .category-box
   transition: .3s ease
   padding: 15px 36px 14px 22px
   border: 1px solid rgba(#868686, .7)
     radius: 10px
-  height: 100%
+  height: 185px
   width: 100%
+  max-width: 355px
   display: flex
   align-items: center
   justify-content: space-between
   color: #868686
   cursor: pointer
+  margin: 0 0 30px
 
   &:hover
     border: solid 1px #dadada
@@ -559,6 +614,7 @@ h2
   width: 100%
   display: flex
   align-items: center
+  z-index: -1
 
 //news
 .news-box
@@ -866,6 +922,24 @@ footer
       &:hover
         color: $orange
 
+.btn-click-menu
+  display: none
+  margin: 0 0 0 10px
+  align-items: center
+  justify-content: center
+  background: $accent
+  color: #fff
+  width: 20px
+  height: 20px
+  font-size: 12px
+  font-weight: 300
+  position: relative
+
+  &:before
+    content: '>'
+    transform: rotate(90deg)
+    margin: 0 2px 0 0
+
 .link-yandex
   width: 100%
   margin: 0 0 11px
@@ -898,17 +972,22 @@ footer
     width: 100%
     height: 50px
 
+.catalog
+  margin: 50px 0 100px
+
 //.leaders
 .leaders-slider, .catalog-slider
   padding: 65px 0 0
   border-top: 1px solid #dedede
+
   .slide
     margin: 0 0 30px
 
 .list-sorting
+  text-align: center
   margin: 0 0 -1px 0
   display: flex
-  align-items: center
+  align-items: flex-end
   justify-content: flex-start
   color: #b6b6b6
   font-size: 17px
@@ -933,12 +1012,14 @@ footer
   cursor: pointer
   color: #2c2c2c
   margin: 0 -1px -1px 0
+
   .list-label
     padding: 32px 13px
 
   &:hover
     box-shadow: 0px 2px 21px 0 rgba(84, 84, 84, 0.42)
     z-index: 1
+
     .add-basket, .list-nav-card
       opacity: 1
 
@@ -1111,6 +1192,7 @@ footer
   display: flex
   align-items: center
   margin: 0 7px 0 0
+
   li
     margin: 0 2px 0 0
     display: flex
@@ -1118,6 +1200,7 @@ footer
     justify-content: center
     width: 14px
     height: 13px
+
     .svg-icon
       fill: #ff8543
       stroke: #ff8543
@@ -1139,6 +1222,8 @@ footer
   border: solid 1px #dadada
   padding: 50px 7px 78px 43px
   z-index: 1
+  margin: 0 -2px 0 0
+
   &:before
     content: ''
     position: absolute
@@ -1149,10 +1234,12 @@ footer
     background: url("../img/overlay.png") no-repeat center
       size: cover
     z-index: -1
+
   h3
     font-size: 42.5px
     font-weight: bold
     margin: 0 0 15px
+
   .subtitle
     max-width: 330px
 
@@ -1166,13 +1253,16 @@ footer
   position: absolute
   right: 7px
   bottom: 79px
+  z-index: -1
 
 .form
   margin: 20px 0 0
   width: 100%
   max-width: 270px
+
   label
     margin: 0 0 16px
+
   button
     background: rgba(#4d9cfe, .5)
     border-radius: 10px
@@ -1189,6 +1279,7 @@ footer
   z-index: 1
 
 .product-card
+  border-radius: 10px
   background: $accent
   color: #fff
   padding: 130px 90px 60px
@@ -1197,8 +1288,10 @@ footer
   display: flex
   flex-direction: column
   align-items: flex-start
+
   .btn
     margin: auto 0 0
+
   .subtitle
     font-size: 20px
 
@@ -1210,6 +1303,8 @@ footer
   margin: 38px 0 0
   font-size: 40px
   font-weight: bold
+  position: relative
+  z-index: 1
 
 .product-card__img
   position: absolute
@@ -1220,8 +1315,10 @@ footer
   bottom: 66px
   right: 110px
   position: absolute
+
   .counter-slide
     color: #fff
+
   .current
     color: #86bcff
 
@@ -1236,14 +1333,18 @@ footer
   height: 290px
   padding: 23px 27px 28px
   color: #fff
+
   h3
     font-size: 20px
     font-weight: bold
     margin: 0 0 12px
+
   &:before
     opacity: 1
+
   &:last-child
     margin: 0
+
   .add-basket
     margin: 0 0 0 70px
     opacity: 1
@@ -1252,6 +1353,7 @@ footer
   bottom: 20px
   right: 36px
   position: absolute
+  z-index: -1
 
 .product-box__footer
   margin: auto 0 0
@@ -1266,6 +1368,7 @@ footer
   border-radius: 10px
   width: 51px
   height: 42px
+
   &:hover
     background: $accent
 
@@ -1284,6 +1387,65 @@ footer
   margin: 11px 0 0
   font-size: 18.5px
   font-weight: bold
+
+.mobile-menu
+  display: none
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  max-width: 480px
+  box-shadow: 0px 9px 13.9px 7.1px rgba(0, 0, 0, 0.55)
+  background-color: #2c2c2c
+  z-index: 3
+  color: #fff
+  padding: 0 0 40px
+  border-radius: 0 0 30px 30px
+  h3
+    font-size: 30px
+
+  .menu
+    width: 100%
+    flex-direction: column
+    align-items: flex-start
+    li
+      width: 100%
+      margin: 0
+      border-top: 2px solid #393939
+  .nav-link
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 23px 30px
+    font-size: 24px
+    &:hover
+      color: $orange
+    .svg-icon
+      width: 31px
+      height: 24px
+      fill: #818181
+
+  &__head
+    padding: 20px 12px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .header-box
+    justify-content: center
+    text-align: center
+    font-size: 18px
+    margin: 30px auto 0
+  .phone
+    color: #fff
+    font-size: 30px
+  .header-box__text
+    font-size: 18px
+
+.btn-close
+  font-size: 30px
+  cursor: pointer
 
 
 @import "media"

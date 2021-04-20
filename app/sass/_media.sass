@@ -3,53 +3,517 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1500px)
+  .form-search
+    max-width: 500px
 
+  .menu li, .header-box
+    margin-right: 20px
+
+  .statistic-links
+    margin-left: 20px
+
+  .links-view
+    margin: 0 20px
+
+  .product-card
+    padding: 28px 42px 30px
+
+  .product-card__img
+    right: 50px
+
+  .product-slider__nav
+    bottom: 40px
+    right: 42px
+
+  .category-box
+    max-width: 310px
+
+@media only screen and (max-width: 1300px)
+  .logo
+    max-width: 150px
+
+  .menu a
+    font-size: 14px
+
+  .product-card__name
+    font-size: 28.5px
+    max-width: 330px
+
+  .category-box
+    max-width: 280px
+
+  .leaders-slider, .catalog-slider
+    padding: 45px 0 0
+
+  .new-price
+    font-size: 31.5px
+    .currency
+      font-size: 23.5px
+
+  .card-title
+    margin: 15px 0 19px
+
+  .add-basket
+    font-size: 15.5px
+
+  .one-click
+    font-size: 13.5px
+    margin: 17px 0 0 auto
+
+  .availability
+    font-size: 13.5px
+
+  .card-body
+    padding: 15px
+
+  .buy-wholesale__img
+    max-width: 330px
+
+  .footer-wrapper
+    padding: 0
+
+@media only screen and (max-width: 1200px)
+  .form-search
+    max-width: 400px
+
+  .btn-catalog
+    padding: 20px
+    font-size: 16px
+
+  .location
+    margin-left: 20px
+
+  .menu a
+    font-size: 12px
+
+  .menu li, .header-box
+    margin-right: 15px
+
+  .header-box strong, .header-box .phone
+    font-size: 16px
+
+  .btn-catalog__icon
+    margin-right: 20px
+
+  .product-box__category
+    font-size: 11.5px
+
+  .product-box .add-basket
+    margin: 0 0 0 33px
+
+  .category-box
+    max-width: 355px
+    margin: 0 20px
+
+  .card
+    max-width: 33.3%
+
+  .buy-wholesale
+    order: 1
+    width: 66.67%
+    padding: 32px 50px 50px
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  .header-center
+    .header-links, .statistic-links, .basket-wrap, .cabinet-item
+      display: none
 
+  header
+    .menu
+      display: none
+
+      &:last-child
+        display: block
+
+  .header-mobile-top
+    display: block
+
+  .form-search
+    width: calc(100% - 230px)
+    max-width: none
+    margin: 0 0 0 auto
+
+  .location
+    margin: 0 auto
+
+  .header-top
+    padding: 19px 0 21px
+
+  .product-card
+    height: 400px
+
+  .product-slider
+    margin-bottom: 20px
+
+  .product-card__img
+    max-width: 200px
+
+  .product-box__img
+    max-width: 100px
+    bottom: auto
+    top: 50%
+    transform: translate(0,-50%)
+
+  .slider-nav
+    justify-content: center
+    margin: 10px auto
+
+  .footer-center .links
+    margin: 20px auto 0
+
+  .footer-box
+    margin: 0 0 25px
+    h3
+      font-size: 20px
+      margin: 0 0 20px
+
+  .menu
+    li
+      margin: 0 0 15px
+
+  footer
+    font-size: 16px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 900px)
+  .card
+    max-width: 50%
+
+  .buy-wholesale
+    width: 100%
+
+@media only screen and (max-width: 768px)
+  .product-card
+    height: 400px
+
+  .product-card__img
+    max-width: 130px
+
+  .home
+    margin: 23px 0 0
+
+  h2
+    text-align: center
+    margin: 0 auto 35px
+
+  .leaders-slider, .catalog-slider
+    border: none
+
+  .list-sorting
+    justify-content: center
+
+  .catalog-slider__nav, .leaders-slider__nav, .news-slider__nav
+    .counter-slide
+      order: 0
+      margin: 0 25px
+
+    .slick-prev
+      margin: 0
+
+  .card
+    margin: 0
+
+  .news
+    padding: 90px 0 120px
+
+  .payment-box
+    justify-content: center
+    text-align: center
+    margin: 0 0 20px
+
+  .footer-center .links
+    margin: 0 auto
+
+  .footer-top
+    padding: 30px 0
+
+  footer
+    .logo
+      max-width: 238px
+      margin: 0 auto 30px
+
+  .form-subscribe
+    margin: 0 auto 30px
+    h3
+      text-align: center
+
+  .address
+    text-align: center
+    margin: 0 auto 30px
+
+  .footer-wrapper
+    &:last-child
+      margin: 0 0 30px
+
+  .link-yandex
+    img
+      margin: 0 auto
+
+  .footer-wrapper .links
+    margin: 0 auto
+
+@media only screen and (max-width: 700px)
+  .news-box
+    margin: 28px
+
+  .news
+    h2
+      margin: 0 auto 15px
+
+@media only screen and (max-width: 576px)
+  header
+    box-shadow: 0 1px 16px 0 rgba(10, 10, 10, 0.24)
+    .location
+      display: none
+    .header-box
+      display: none
+
+      p
+        display: none
+      &:last-child
+        display: block
+
+  .logo
+    margin: 0 auto 0 0
+    max-width: 180px
+
+  .header-box strong, .header-box .phone
+    font-size: 21.5px
+    margin: 0 0 3px
+
+  .header-box__text
+    font-size: 12px
+
+  .btn-catalog
+    display: none
+
+  .form-search
+    width: 100%
+    input
+      background: #e5e9fb
+      padding: 0 45px 0 20px
+    button
+      right: 15px
+
+  .header-center
+    padding: 0 0 10px
+    background: #fff
+
+  .product-card__name
+    font-size: 22.5px
+    max-width: 220px
+    margin: 23px 0 0
+
+  .product-card__img
+    top: 28px
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+  .product-card
+    height: 270px
+    .subtitle
+      font-size: 15px
 
+  .btn
+    font-size: 14.5px
+
+  .product-slider__nav
+    bottom: 55px
+
+  .counter-slide
+    font-size: 15.5px
+    margin: 0 13px 0 0
+
+  .slick-arrow
+    width: 22px
+    height: 22px
+    font-size: 19px
+
+  .slick-prev
+    margin: 0 10px 0 0
+
+  .product-box
+    height: 133px
+    padding: 10.5px 16.5px 8.7px 11.7px
+    h3
+      font-size: 15px
+      margin: 0 0 2px
+
+  .product-box__img
+    max-width: 65px
+    right: 16px
+
+  .countdown, .countdown-time
+    font-size: 8.5px
+
+  .countdown-time
+    margin: 4px 0 0
+
+  .product-box .add-basket
+    width: 23px
+    height: 20px
+    padding: 5px
+
+  .advantages-box
+    font-size: 15px
+
+  .advantages-box__icon
+    width: 40px
+    min-width: 40px
+    margin-right: 16px
+
+  .leaders-slider-wrapper
+    .buy-wholesale
+      display: none
+    .card
+      display: none
+      &:nth-child(-n+1)
+        display: block
+
+  .card
+    max-width: 350px
+    margin: 0 12px
+
+  .buy-wholesale
+    margin: 55px 0 0
+    &:before
+      width: 120%
+    .subtitle
+      padding: 0
+      text-align: center
+      border: none
+      max-width: 240px
+      width: 100%
+      margin: 0 auto
+      font-size: 18.5px
+    h3
+      font-size: 27.5px
+      text-align: center
+
+  .buy-wholesale__img
+    position: relative
+    top: 0
+    right: 0
+    bottom: 0
+    margin: 22px auto 0
+
+  .form
+    max-width: 265px
+    margin: 45px auto 0
+    button
+      margin: 0 auto
+
+  .footer-box
+    text-align: center
+    width: 100%
+    h3
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0
+
+  .footer-menu
+    margin: 10px 0 0
+    display: none
+
+  .btn-click-menu
+    display: inline-flex
+
+  .payment-box
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    p
+      margin: 0
+      font-size: 14px
+
+  .list-payment li
+    height: 20px
+    width: 30px
+    margin: 0 10px 0 0
+
+  .list-payment li:nth-child(2)
+    width: 40px
+
+  .list-payment li:last-child
+    width: 50px
+
+  .mobile-menu .phone
+    font-size: 24px
+
+@media only screen and (max-width: 480px)
+  .product-box__category
+    max-width: 100px
+
+  .product-box__img
+    max-width: 40px
+
+  .news-box
+    max-width: 300px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 420px)
+  .header-box strong, .header-box .phone
+    font-size: 16px
+
+  .logo
+    max-width: 120px
+
+  .header-box__text
+    font-size: 10px
+
+  .product-card
+    padding: 20px
+
+  .product-card__name
+    font-size: 18px
 
 
-/*==========  Mobile First  ==========*/
+  .product-card__img
+    right: 20px
+  .product-slider__nav
+    bottom: 45px
+    right: 20px
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+  .btn-border
+    padding: 5px 15px
 
+  .container
+    padding: 0 10px
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+  .row
+    margin: 0 -10px
 
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+    padding: 0 10px
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+  .product-box .add-basket
+    margin: 0 0 0 10px
 
+  .advantages-box
+    font-size: 11.5px
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+  .mb-40
+    margin-bottom: 30px
 
+  .card
+    max-width: 300px
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  .mobile-menu .phone
+    font-size: 24px
 
+@media only screen and (max-width: 360px)
+  .advantages-box
+    font-size: 9.5px
+
+  .advantages-box__icon
+    width: 30px
+    min-width: 30px
+
+  .footer-center .links
+    font-size: 14px
+
+  .mobile-menu .nav-link
+    padding: 20px
+    font-size: 18px

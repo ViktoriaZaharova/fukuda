@@ -28,10 +28,69 @@
 <body>
 
 <div class="mobile-menu">
-  <div class="btn-close"></div>
+  <div class="mobile-menu__head">
+    <h3>Меню</h3>
+    <div class="btn-close">x</div>
+  </div>
+
+  <ul class="navbar-nav menu">
+    <li class="nav-item">
+      <a class="nav-link" href="#"> Доставка и оплата <svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Отзывы о магазине <svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Прайс-лист (Опт) <svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">Контакты <svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+    </li>
+  </ul>
+
+  <div class="header-box">
+    <p>Бесплатно по РФ</p>
+    <a href="tel:+74959216667" class="phone">+7 (495) 921-66-67</a>
+    <a href="#" class="color-blue header-box__text">Заказать обратный звонок</a>
+  </div>
 </div>
 
 <header>
+  <div class="header-mobile-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <a href="#" class="header-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="header-links header-links-favorites">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+            <span class="header-links__val">0</span></a>
+
+          <a href="#" class="basket-wrap">
+            <span class="basket-links">
+              <svg class="svg-icon"><use xlink:href="img/sprite.svg#basket"></use></svg>
+             <span class="header-links__val">0</span>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="header-top">
     <div class="container">
       <div class="row">
@@ -162,7 +221,7 @@
                 </div>
 
                 <a href="#" class="btn btn-border">Подробнее <span class="icon">></span></a>
-                <img src="img/product1.png" alt="" class="product-card__img">
+                <div class="product-card__img"><img src="img/product1.png" alt=""></div>
               </div>
             </div>
             <div class="slide">
@@ -174,7 +233,7 @@
                 </div>
 
                 <a href="#" class="btn btn-border">Подробнее <span class="icon">></span></a>
-                <img src="img/product1.png" alt="" class="product-card__img">
+                <div class="product-card__img"><img src="img/product1.png" alt=""></div>
               </div>
             </div>
             <div class="slide">
@@ -186,7 +245,7 @@
                 </div>
 
                 <a href="#" class="btn btn-border">Подробнее <span class="icon">></span></a>
-                <img src="img/product1.png" alt="" class="product-card__img">
+                <div class="product-card__img"><img src="img/product1.png" alt=""></div>
               </div>
             </div>
             <div class="slide">
@@ -198,7 +257,7 @@
                 </div>
 
                 <a href="#" class="btn btn-border">Подробнее <span class="icon">></span></a>
-                <img src="img/product1.png" alt="" class="product-card__img">
+                <div class="product-card__img"><img src="img/product1.png" alt=""></div>
               </div>
             </div>
             <div class="slide">
@@ -210,7 +269,7 @@
                 </div>
 
                 <a href="#" class="btn btn-border">Подробнее <span class="icon">></span></a>
-                <img src="img/product1.png" alt="" class="product-card__img">
+                <div class="product-card__img"><img src="img/product1.png" alt=""></div>
               </div>
             </div>
           </div>
@@ -222,43 +281,48 @@
       </div>
 
       <div class="col-12 col-lg-5">
-        <div class="product-box box-decor">
-          <h3>Товар дня</h3>
-          <div class="product-box__category">Скидка -10 % весь месяц!</div>
+        <div class="row">
+          <div class="col-6 col-lg-12 mb-20">
+            <div class="product-box box-decor">
+              <h3>Товар дня</h3>
+              <div class="product-box__category">Скидка -10 % весь месяц!</div>
 
-          <img src="img/product2.png" alt="" class="product-box__img">
+              <div class="product-box__img"><img src="img/product2.png" alt=""></div>
 
-          <div class="product-box__footer">
-            <div class="countdown">
-              <p>До конца акции</p>
-              <div class="countdown-time"></div>
+              <div class="product-box__footer">
+                <div class="countdown">
+                  <p>До конца акции</p>
+                  <div class="countdown-time"></div>
+                </div>
+
+                <a href="#" class="btn btn-blue add-basket">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#add_basket"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-
-            <a href="#" class="btn btn-blue add-basket">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#add_basket"></use>
-              </svg>
-            </a>
           </div>
-        </div>
+          <div class="col-6 col-lg-12">
+            <div class="product-box box-decor">
+              <h3>Топ продаж</h3>
+              <div class="product-box__category">Товар месяца</div>
 
-        <div class="product-box box-decor">
-          <h3>Топ продаж</h3>
-          <div class="product-box__category">Товар месяца</div>
+              <div class="product-box__img"><img src="img/product2.png" alt=""></div>
 
-          <img src="img/product2.png" alt="" class="product-box__img">
+              <div class="product-box__footer">
+                <div class="countdown">
+                  <p>Fukuda <br>
+                    MW-93T-2-3R</p>
+                </div>
 
-          <div class="product-box__footer">
-            <div class="countdown">
-              <p>Fukuda <br>
-                MW-93T-2-3R</p>
+                <a href="#" class="btn btn-blue add-basket">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#add_basket"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-
-            <a href="#" class="btn btn-blue add-basket">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#add_basket"></use>
-              </svg>
-            </a>
           </div>
         </div>
       </div>
@@ -304,63 +368,68 @@
         <h2>Категории</h2>
       </div>
 
-      <div class="col-12 col-mb-6 col-lg-3 mb-40">
-        <div class="category-box box-decor">
-          <div class="category-box__body">
-            <h3>Лазерные уровни</h3>
-            <a href="#" class="links-grey links">
-              <span class="links-text">Перейти</span>
-              <svg class="links-icon svg-icon">
-                <use xlink:href="img/sprite.svg#arrow_right"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="category-box__img"><img src="img/product3.png" alt=""></div>
+      <div class="col-12">
+        <div class="category-slider w-100">
+          <div class="slide">
+            <div class="category-box box-decor">
+              <div class="category-box__body">
+                <h3>Лазерные уровни</h3>
+                <a href="#" class="links-grey links">
+                  <span class="links-text">Перейти</span>
+                  <svg class="links-icon svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow_right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="category-box__img"><img src="img/product3.png" alt=""></div>
 
-        </div>
-      </div>
-      <div class="col-12 col-mb-6 col-lg-3 mb-40">
-        <div class="category-box box-decor">
-          <div class="category-box__body">
-            <h3>Лазерные уровни</h3>
-            <a href="#" class="links-grey links">
-              <span class="links-text">Перейти</span>
-              <svg class="links-icon svg-icon">
-                <use xlink:href="img/sprite.svg#arrow_right"></use>
-              </svg>
-            </a>
+            </div>
           </div>
-          <div class="category-box__img"><img src="img/product3.png" alt=""></div>
+          <div class="slide">
+            <div class="category-box box-decor">
+              <div class="category-box__body">
+                <h3>Лазерные уровни</h3>
+                <a href="#" class="links-grey links">
+                  <span class="links-text">Перейти</span>
+                  <svg class="links-icon svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow_right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="category-box__img"><img src="img/product3.png" alt=""></div>
 
-        </div>
-      </div>
-      <div class="col-12 col-mb-6 col-lg-3 mb-40">
-        <div class="category-box box-decor">
-          <div class="category-box__body">
-            <h3>Лазерные уровни</h3>
-            <a href="#" class="links-grey links">
-              <span class="links-text">Перейти</span>
-              <svg class="links-icon svg-icon">
-                <use xlink:href="img/sprite.svg#arrow_right"></use>
-              </svg>
-            </a>
+            </div>
           </div>
-          <div class="category-box__img"><img src="img/product3.png" alt=""></div>
+          <div class="slide">
+            <div class="category-box box-decor">
+              <div class="category-box__body">
+                <h3>Лазерные уровни</h3>
+                <a href="#" class="links-grey links">
+                  <span class="links-text">Перейти</span>
+                  <svg class="links-icon svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow_right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="category-box__img"><img src="img/product3.png" alt=""></div>
 
-        </div>
-      </div>
-      <div class="col-12 col-mb-6 col-lg-3 mb-40">
-        <div class="category-box box-decor">
-          <div class="category-box__body">
-            <h3>Лазерные уровни</h3>
-            <a href="#" class="links-grey links">
-              <span class="links-text">Перейти</span>
-              <svg class="links-icon svg-icon">
-                <use xlink:href="img/sprite.svg#arrow_right"></use>
-              </svg>
-            </a>
+            </div>
           </div>
-          <div class="category-box__img"><img src="img/product3.png" alt=""></div>
+          <div class="slide">
+            <div class="category-box box-decor">
+              <div class="category-box__body">
+                <h3>Лазерные уровни</h3>
+                <a href="#" class="links-grey links">
+                  <span class="links-text">Перейти</span>
+                  <svg class="links-icon svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow_right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="category-box__img"><img src="img/product3.png" alt=""></div>
+
+            </div>
+          </div>
 
         </div>
       </div>
@@ -368,13 +437,21 @@
   </div>
 </section>
 
+<div class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"><a href="#" class="banner-links"><img src="img/banner1.jpg" alt=""></a></div>
+    </div>
+  </div>
+</div>
+
 <section class="catalog">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-md-4 col-lg-3">
         <h2>Каталог</h2>
       </div>
-      <div class="col-12 col-md-6 col-lg-5">
+      <div class="col-12 col-md-8 col-lg-5">
         <ul class="list-sorting">
           <li>Хит продаж</li>
           <li class="active">Новинки</li>
@@ -1039,7 +1116,7 @@
                 <div class="subtitle">Вы можете получить
                   прайс-лист оставив заявку
                 </div>
-                <img src="img/boxes.png" alt="" class="buy-wholesale__img">
+                <div class="buy-wholesale__img"><img src="img/boxes.png" alt=""></div>
                 <form method="post" class="form">
                   <label><input type="text" name="name" placeholder="Введите Имя"></label>
                   <label><input type="text" name="phone" placeholder="Введите телефон"></label>
@@ -4522,9 +4599,25 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-lg-4">
         <div class="slider-nav catalog-slider__nav">
           <div class="counter-slide"></div>
+        </div>
+      </div>
+
+      <div class="col-12 d-block d-sm-none">
+        <div class="buy-wholesale">
+          <h3>Купить оптом</h3>
+          <div class="subtitle">Вы можете получить
+            прайс-лист оставив заявку
+          </div>
+          <form method="post" class="form">
+            <label><input type="text" name="name" placeholder="Введите Имя"></label>
+            <label><input type="text" name="phone" placeholder="Введите телефон"></label>
+            <label><input type="text" name="mail" placeholder="Введите E-mail"></label>
+            <button type="submit" class="btn btn-accent">Отправить</button>
+          </form>
+          <div class="buy-wholesale__img"><img src="img/boxes.png" alt=""></div>
         </div>
       </div>
     </div>
@@ -4532,21 +4625,13 @@
 </section>
 
 
-<div class="banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-12"><a href="#" class="banner-links"><img src="img/banner1.jpg" alt=""></a></div>
-    </div>
-  </div>
-</div>
-
 <section class="leaders">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-md-4 col-lg-3">
         <h2>Лидеры продаж</h2>
       </div>
-      <div class="col-12 col-md-6 col-lg-5">
+      <div class="col-12 col-md-8 col-lg-5">
         <ul class="list-sorting">
           <li class="active">По цене</li>
           <li>Новинки</li>
@@ -7838,7 +7923,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-lg-4">
         <div class="slider-nav leaders-slider__nav">
           <div class="counter-slide"></div>
         </div>
@@ -8045,27 +8130,10 @@
           </form>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3 order-lg-1">
-          <div class="footer-box">
-            <h3>Контакты</h3>
-            <p>Режим работы</p>
-            <p>Будни 9:00 - 19:00</p>
-            <p>Сб: 10:00 - 16:00</p>
-            <p>Вс: Выходной</p>
-          </div>
-
-          <div class="footer-box">
-            <h3>Остались вопросы?<br>Мы с радостью поможем вам.</h3>
-            <a href="mailto:mail@mail.ru" class="mail color-white">mail@mail.ru</a>
-            <a href="tel:+79999999999" class="phone color-white">+7 (999) 999-99-99</a>
-            <a href="tel:+79999999999" class="phone color-white">+7 (999) 999-99-99</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 order-md-1 order-lg-0">
           <div class="footer-wrapper">
             <div class="footer-box">
-              <h3>Компания</h3>
+              <h3>Компания <span class="btn-click-menu"></span></h3>
               <ul class="footer-menu">
                 <li><a href="#">О компании</a></li>
                 <li><a href="#">Пункт выдачи</a></li>
@@ -8077,7 +8145,7 @@
             </div>
 
             <div class="footer-box">
-              <h3>Каталог</h3>
+              <h3>Каталог <span class="btn-click-menu"></span></h3>
               <ul class="footer-menu">
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Каталог</a></li>
@@ -8089,7 +8157,7 @@
             </div>
 
             <div class="footer-box">
-              <h3>Клиентам</h3>
+              <h3>Клиентам <span class="btn-click-menu"></span></h3>
               <ul class="footer-menu">
                 <li><a href="#">Оплата и Доставка</a></li>
                 <li><a href="#">Оплата и Доставка</a></li>
@@ -8106,13 +8174,30 @@
           </div>
         </div>
 
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="footer-box">
+            <h3>Контакты</h3>
+            <p>Режим работы</p>
+            <p>Будни 9:00 - 19:00</p>
+            <p>Сб: 10:00 - 16:00</p>
+            <p>Вс: Выходной</p>
+          </div>
+
+          <div class="footer-box">
+            <h3>Остались вопросы?<br>Мы с радостью поможем вам.</h3>
+            <a href="mailto:mail@mail.ru" class="mail color-white">mail@mail.ru</a>
+            <a href="tel:+79999999999" class="phone color-white">+7 (999) 999-99-99</a>
+            <a href="tel:+79999999999" class="phone color-white">+7 (999) 999-99-99</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
   <div class="footer-center">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="payment-box">
             <p>Мы принимаем: </p>
             <ul class="list-payment">
@@ -8123,7 +8208,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="payment-box">
             <p>Мы в социальных сетях:</p>
             <ul class="list-social">
@@ -8151,11 +8236,11 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-2">
+        <div class="col-6 col-lg-2">
           <a href="#" class="links text-center color-white">ОБРАТНЫЙ ЗВОНОК</a>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-2">
+        <div class="col-6 col-lg-2">
           <a href="#" class="links text-center color-white">НАПИСАТЬ НАМ</a>
         </div>
       </div>

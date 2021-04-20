@@ -14,6 +14,29 @@ $('.news-slider').slick({
     appendArrows: '.news-slider__nav',
     prevArrow: '<button type="button" class="slick-prev"><</button>',
     nextArrow: '<button type="button" class="slick-next">></button>',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 1,
+                infinite: true,
+                variableWidth: true,
+                centerMode: true,
+            }
+        }
+    ]
 });
 
 let pagingInfo2 = $('.leaders-slider__nav .counter-slide');
@@ -31,6 +54,17 @@ $('.leaders-slider').slick({
     appendArrows: '.leaders-slider__nav',
     prevArrow: '<button type="button" class="slick-prev"><</button>',
     nextArrow: '<button type="button" class="slick-next">></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                infinite: true,
+                variableWidth: true,
+                centerMode: true,
+            }
+        }
+    ]
 });
 
 let pagingInfo3 = $('.catalog-slider__nav .counter-slide');
@@ -48,6 +82,17 @@ $('.catalog-slider').slick({
     appendArrows: '.catalog-slider__nav',
     prevArrow: '<button type="button" class="slick-prev"><</button>',
     nextArrow: '<button type="button" class="slick-next">></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                infinite: true,
+                variableWidth: true,
+                centerMode: true,
+            }
+        }
+    ]
 });
 
 
@@ -73,4 +118,34 @@ $(".countdown-time").countdowntimer({
     dateAndTime: "2021/04/21 00:00:00",
     labelsFormat: false,
     displayFormat: "HMS",
+});
+
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 1200) {
+        $('.category-slider:not(.slick-initialized)').slick({
+            infinite: true,
+            slidesToShow: 3,
+            arrows: false,
+            variableWidth: true,
+            centerMode: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    } else {
+        $(".category-slider.slick-initialized").slick("unslick");
+    }
+});
+// slick active
+
+$('.btn-click-menu').on('click', function () {
+   $(this).parents('.footer-box').find('.footer-menu').fadeToggle();
+});
+
+$('.btn-burger').on('click', function () {
+   $('.mobile-menu').fadeIn();
+});
+
+$('.btn-close').on('click', function () {
+    $('.mobile-menu').fadeOut();
 });
