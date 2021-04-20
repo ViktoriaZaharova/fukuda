@@ -2087,7 +2087,13 @@ footer {
   .mobile-menu .phone {
     font-size: 24px; }
   .add-basket {
-    opacity: 1; } }
+    opacity: 1; }
+  .news-slider .slide, .leaders-slider .slide, .catalog-slider .slide {
+    display: none; }
+    .news-slider .slide:first-child, .leaders-slider .slide:first-child, .catalog-slider .slide:first-child {
+      display: block; }
+  .news-slider.slick-initialized .slide, .leaders-slider.slick-initialized .slide, .catalog-slider.slick-initialized .slide {
+    display: block; } }
 
 @media only screen and (max-width: 480px) {
   .product-box__category {

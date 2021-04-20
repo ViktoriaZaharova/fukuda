@@ -124,6 +124,8 @@
     &.slick-initialized .slide
       display: block
 
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .header-center
@@ -460,6 +462,16 @@
 
   .add-basket
     opacity: 1
+
+  .news-slider, .leaders-slider, .catalog-slider
+    .slide
+      display: none
+
+      &:first-child
+        display: block
+
+    &.slick-initialized .slide
+      display: block
 
 @media only screen and (max-width: 480px)
   .product-box__category
