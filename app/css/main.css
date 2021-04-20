@@ -1849,7 +1849,9 @@ footer {
   .menu li {
     margin: 0 0 15px; }
   footer {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .product-slider__nav {
+    margin: 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 900px) {
@@ -2077,7 +2079,9 @@ footer {
   .list-payment li:last-child {
     width: 50px; }
   .mobile-menu .phone {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .add-basket {
+    opacity: 1; } }
 
 @media only screen and (max-width: 480px) {
   .product-box__category {
