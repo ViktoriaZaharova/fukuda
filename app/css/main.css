@@ -581,7 +581,7 @@ h2 {
   fill: #fff;
   margin: 0 50px;
   width: 35px;
-  height: 20px; }
+  height: 27px; }
 
 .statistic-links {
   margin: 0 0 0 60px;
@@ -1001,7 +1001,7 @@ footer {
       -ms-flex-pack: start;
           justify-content: flex-start; }
   .list-payment li {
-    margin: 0 12px 0 0;
+    margin: 0 17px 0 0;
     height: 26px;
     width: 43px;
     display: -webkit-box;
@@ -1512,6 +1512,14 @@ footer {
   overflow: hidden;
   z-index: 1; }
 
+.product-slider .slide {
+  display: none; }
+  .product-slider .slide:first-child {
+    display: block; }
+
+.product-slider.slick-initialized .slide {
+  display: block; }
+
 .product-card {
   border-radius: 10px;
   background: #0052b8;
@@ -1751,7 +1759,7 @@ footer {
     font-size: 15.5px; }
   .one-click {
     font-size: 13.5px;
-    margin: 17px 0 0 auto; }
+    margin: 7px 0 0 auto; }
   .availability {
     font-size: 13.5px; }
   .card-body {
@@ -1880,6 +1888,9 @@ footer {
             justify-content: center;
     text-align: center;
     margin: 0 0 20px; }
+    .payment-box p {
+      margin: 0 0 10px;
+      width: 100%; }
   .footer-center .links {
     margin: 0 auto; }
   .footer-top {
@@ -2053,12 +2064,11 @@ footer {
         -ms-flex-pack: center;
             justify-content: center; }
     .payment-box p {
-      margin: 0;
       font-size: 14px; }
   .list-payment li {
     height: 20px;
     width: 30px;
-    margin: 0 10px 0 0; }
+    margin: 0 15px 0 0; }
   .list-payment li:nth-child(2) {
     width: 40px; }
   .list-payment li:last-child {
@@ -2072,7 +2082,12 @@ footer {
   .product-box__img {
     max-width: 40px; }
   .news-box {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .category-box {
+    max-width: 280px;
+    padding: 20px; }
+    .category-box h3 {
+      font-size: 20px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

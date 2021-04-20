@@ -490,7 +490,7 @@ h2
   fill: #fff
   margin: 0 50px
   width: 35px
-  height: 20px
+  height: 27px
 
 .statistic-links
   margin: 0 0 0 60px
@@ -840,7 +840,7 @@ footer
   justify-content: flex-start
 
   li
-    margin: 0 12px 0 0
+    margin: 0 17px 0 0
     height: 26px
     width: 43px
     display: flex
@@ -1277,6 +1277,16 @@ footer
   border-radius: 10px
   overflow: hidden
   z-index: 1
+
+.product-slider
+  .slide
+    display: none
+
+    &:first-child
+      display: block
+
+  &.slick-initialized .slide
+    display: block
 
 .product-card
   border-radius: 10px
