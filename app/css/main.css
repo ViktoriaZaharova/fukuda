@@ -987,6 +987,8 @@ footer {
   font-weight: 300; }
   .payment-box p {
     margin: 0 23px 0 0; }
+    .payment-box p br {
+      display: none; }
 
 .list-payment {
   display: -webkit-box;
@@ -1460,9 +1462,10 @@ footer {
   color: #fff;
   position: relative;
   border: solid 1px #dadada;
-  padding: 50px 7px 78px 43px;
+  padding: 30px 7px 27px 43px;
   z-index: 1;
-  margin: 0 -2px 0 0; }
+  margin: 0 -2px 0 0;
+  overflow: hidden; }
   .buy-wholesale:before {
     content: '';
     position: absolute;
@@ -2135,4 +2138,13 @@ footer {
     font-size: 14px; }
   .mobile-menu .nav-link {
     padding: 20px;
-    font-size: 18px; } }
+    font-size: 18px; }
+  .payment-box p {
+    max-width: 120px; }
+    .payment-box p br {
+      display: block; }
+  .list-payment li {
+    margin-right: 11px;
+    height: 18px; }
+    .list-payment li:last-child {
+      width: 45px; } }
